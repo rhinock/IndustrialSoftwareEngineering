@@ -62,6 +62,3 @@ ABCDEFGH
 
 If you think that test is wrong, check whitespaces in your output — test cannot differentiate spaces and junk output 🙂
 Please, check the following string before submitting your solution: ABCQEFDEFGHIJ BCXEFGYZBCDEWEFGHU (e.g. there is common EFGH).
-
-- [Longest Common Subsequences](https://leetcode.com/problems/longest-common-subsequence/discussion/)
-- [4.9 Longest Common Subsequence (LCS) - Recursion and Dynamic Programming](https://www.youtube.com/watch?v=sSno9rV8Rhg)
