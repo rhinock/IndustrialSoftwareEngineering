@@ -7,10 +7,23 @@
     new String[] {"ABCDEFGH", "ABCDEFG", "ABCDEF", "ABCDE", "EDCBCA"},
     new String[] {"ABCDEFGH", "ABCDEFG", "AxBCDEF", "ABCDxE", "EDCBCAABCD"},
     new String[] {"ABCDEFGH", "1234"},
-    new String[] {"ABCDEFGH"}
+    new String[] {"ABCDEFGH"},
+    new String[] {"ABCQEFDEFGHIJ", "BCXEFGYZBCDEWEFGHU"}
 };
 
-String[] answers = new String[] {"BCD", "1", "ABC", "ABCDE", "A", "BC", "BCD", "", "ABCDEFGH"};
+String[] answers = new String[] 
+{
+    "BCD", 
+    "1", 
+    "ABC", 
+    "ABCDE", 
+    "A", 
+    "BC", 
+    "BCD", 
+    "", 
+    "ABCDEFGH",
+    "EFGH"
+    };
 
 for (int i = 0; i < arrs.GetLength(0); i++)
 {

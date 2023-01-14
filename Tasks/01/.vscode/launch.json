@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Node.js (launch)",
-            "program": "${workspaceFolder}/JavaScript/lcs.js",
+            "program": "${workspaceFolder}/JavaScript/lcs-local.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"

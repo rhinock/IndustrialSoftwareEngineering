@@ -19,8 +19,7 @@ function lcs(arr) {
 
     for (i = 0; i < len; i++) {
         for (j = i + 1; j <= len; j++) {
-            stem = s.substring(i, j - i);
-            k = 1;
+            stem = s.substr(i, j - i);
 
             for (k = 1; k < n; k++)
                 if (!arr[k].includes(stem))

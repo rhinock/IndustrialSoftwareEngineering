@@ -1,13 +1,3 @@
-// const { argv } = require('node:process');
-
-// if (argv.length <= 2) {
-//     console.log();
-// }
-
-// if (argv.length == 3) {
-//     console.log(argv[2]);
-// }
-
 arrs = [
     ["ABCDEFZ", "WBCDXYZ"],
     ["132", "12332", "12312"],
@@ -17,10 +7,11 @@ arrs = [
     ["ABCDEFGH", "ABCDEFG", "ABCDEF", "ABCDE", "EDCBCA"],
     ["ABCDEFGH", "ABCDEFG", "AxBCDEF", "ABCDxE", "EDCBCAABCD"],
     ["ABCDEFGH", "1234"],
-    ["ABCDEFGH"]
+    ["ABCDEFGH"],
+    ["ABCQEFDEFGHIJ", "BCXEFGYZBCDEWEFGHU"]
 ];
 
-answers = ["BCD", "1", "ABC", "ABCDE", "A", "BC", "BCD", "", "ABCDEFGH"];
+answers = ["BCD", "1", "ABC", "ABCDE", "A", "BC", "BCD", "", "ABCDEFGH", "EFGH"];
 
 for (a = 0; a < answers.length; a++) {
     // Function call
@@ -41,8 +32,8 @@ function lcs(arr) {
         for (j = i + 1; j <= len; j++) {
             // generating all possible substrings
             // of our reference string arr[0] i.e s
-            stem = s.substring(i, j - i);
-            k = 1;
+            stem = s.substr(i, j - i);
+
             for (k = 1; k < n; k++)
 
                 // Check if the generated stem is
