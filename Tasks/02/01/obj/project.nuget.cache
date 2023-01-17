@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EfcgGlez9o1GNK1CgHSTMm9adcHFlgi+sxYSa7plbPflSP0IS/tZuEpsvxWC6AQ/LM0ltunq06aItRdAvJBfvg==",
+  "success": true,
+  "projectFilePath": "C:\\github\\rhinock\\ITransition\\Tasks\\02\\01\\01.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alpha\\.nuget\\packages\\seriesone.core\\1.0.8\\seriesone.core.1.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
