@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using _01.Areas.Identity.Data;
 
@@ -11,9 +12,11 @@ using _01.Areas.Identity.Data;
 namespace _01.Migrations
 {
     [DbContext(typeof(IdentityDataContext))]
-    partial class IdentityDataContextModelSnapshot : ModelSnapshot
+    [Migration("20230127190842_UserForIdentityContext")]
+    partial class UserForIdentityContext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,6 +191,7 @@ namespace _01.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
