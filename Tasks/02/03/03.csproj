@@ -3,25 +3,25 @@
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net7.0</TargetFramework>
-		<RootNamespace>_02</RootNamespace>
+		<RootNamespace>_03</RootNamespace>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<UserSecretsId>60358221-8511-461e-bdfe-765a681eee4b</UserSecretsId>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="SeriesOne.Core" Version="1.0.8" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\Common\Common.csproj" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<Content Include="..\task2\*.*">
 			<Link>Task2\%(RecursiveDir)%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="SHA3.Net">
+			<HintPath>..\sha3.net\src\SHA3.Net\bin\Debug\net6.0\SHA3.Net.dll</HintPath>
+		</Reference>
+		<Reference Include="SHA3.Net.Tests">
+			<HintPath>..\sha3.net\tests\SHA3.Net.Tests\bin\Debug\net6.0\SHA3.Net.Tests.dll</HintPath>
+		</Reference>
 	</ItemGroup>
 
 </Project>

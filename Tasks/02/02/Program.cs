@@ -18,7 +18,7 @@ foreach (string file in Directory.EnumerateFiles("task2"))
 hashes.Sort();
 
 var hashesString = string.Join(string.Empty, hashes);
-hashesString += SecretAppsettingReader.ReadSection<string>("Email");
+hashesString += SecretAppsettingReader.ReadSection<string, Program>("Email");
 
 var resultHash = Hash.FromBytes(algorithm.ComputeHash(hashesString.ToByteArray())).ToString()?.ToLower();
 Console.WriteLine(resultHash);
