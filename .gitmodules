@@ -1,0 +1,3 @@
+[submodule "Tasks/02/sha3.net"]
+	path = Tasks/02/sha3.net
+	url = https://github.com/dariogriffo/sha3.net.git
