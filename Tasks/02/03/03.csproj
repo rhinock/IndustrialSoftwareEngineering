@@ -6,6 +6,7 @@
 		<RootNamespace>_03</RootNamespace>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<UserSecretsId>e7c603c0-502b-4161-b996-97c146e4b8ac</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -13,6 +14,10 @@
 			<Link>Task2\%(RecursiveDir)%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Common\Common.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

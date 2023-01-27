@@ -18,7 +18,7 @@ foreach (string file in Directory.EnumerateFiles("task2"))
 hashes.Sort();
 
 var hashesString = string.Join(string.Empty, hashes);
-hashesString += "rhinock@yandex.ru";
+hashesString += SecretAppsettingReader.ReadSection<string, Program>("Email");
 
 var resultHash = Sha3.Sha3256().ComputeHash(Encoding.ASCII.GetBytes(hashesString)).ToHexString().ToLower();
 Console.WriteLine(resultHash);
